@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    height: 70px;
+    box-shadow: 2px 2px 20px rgba(158, 162, 179, 0.3);
+   
+}
+.navbar .logo{
+    margin: 0px -50px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 30px 20px;
+    color: black;
+}
+.navbar ul li{
+    display: inline-block;
+    text-align: right;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: rgb(83, 142, 253);
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 60%;
+}
+.navbar ul li a{
+    padding-right: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 30px 20px;
+    color: black;
+    transition: 0.5s;
+}
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-text{
+    font-size: 2.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 80px;
+}
+span{
+    color: rgb(83, 142, 253);
+}
+.home-pic{
+    margin: 40px 50px;
+    height: 450px;
+    width: 450px;
+}
+.home-pic img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    text-decoration: none;
+    font-size: 1rem;
+    background: rgb(83, 142, 253);
+    padding: 15px 30px;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn:hover,
+.btn-1:hover{
+    padding: 15px 35px;
+    letter-spacing: 1px;
+}
+.home .icon{
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin: 60px 0px;
+    position: absolute;
+}
+.home .icon i,
+.icons i{
+    transition: 0.5s;
+}
+.home .icon i:hover:nth-child(1),
+.icons i:hover:nth-child(1){
+    color: blue;
+    font-size: 2rem;
+}
+.home .icon i:hover:nth-child(2),
+.icons i:hover:nth-child(2){
+    color: crimson;
+    font-size: 2rem;
+}
+.home .icon i:hover:nth-child(3),
+.icons i:hover:nth-child(3){
+    color: green;
+    font-size: 2rem;
+}
+.about{
+    margin-top: 5%;
+}
+.about h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgb(83, 142, 253);
+}
+.about h2::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 10%;
+    margin: auto;
+    background: rgb(83, 142, 253);
+}
+.btn-1{
+    text-decoration: none;
+    background: rgb(83, 142, 253);
+    margin: 2% 0%;
+    position: absolute;
+    padding: 15px 30px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.about-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-pic{
+    width: 280px;
+    height: 350px;
+    margin: 5% 4%;
+}
+.about-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.about-text{
+    width: 500px;
+    
+}
+.about-text h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+.about-text p{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.p-skill{
+    margin-bottom: 7%;
+}
+.p-skill h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 7% 5%;
+    color: rgb(83, 142, 253);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.p-skill h2::after{
+    height: 3px;
+    content: '';
+    background: rgb(83, 142, 253);
+    width: 14%;
+    margin: auto;
+    display: block;
+}
+.my-skill{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.professional-skills{
+    width: 500px;
+}
+.professional-skills h3{
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.professional-skills p{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.icon-main{
+    display: flex;
+    width: 450px;
+    height: 45px;
+    box-shadow: 2px 2px 20px rgba(158, 162, 179, 0.3);
+    margin: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.icon1{
+    font-size: 1.3rem;
+    padding-right: 20px;
+    color: rgb(83, 142, 253);
+}
+.icon1 i{
+    padding-left: 8px;
+}
+.text1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    margin-right: 250px;
+}
+.percentage{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+}
+
+.skill-pic{
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 50px;
+   
+}
+.skill-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.work-heading{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(83, 142, 253);
+    margin: 5%;
+}
+.work-heading h2::after{
+    content: '';
+    height: 3px;
+    width: 15%;
+    background: rgb(83, 142, 253);
+    display: block;
+    margin: auto;
+}
+
+.works{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+}
+.works img{
+    width: 80%;
+    height: 100%;
+   border-radius: 10px;
+   transition: 0.5s;
+}
+.works img:hover{
+    width: 82%;
+    box-shadow: 2px 2px 20px rgba(158, 162, 179, 1);
+}
+.works p{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+.btn-2,
+.btn-3{
+    text-decoration: none;
+    background: black;
+    font-size: 1rem;
+    padding: 4px 12px;
+    color: rgb(83, 142, 253);
+    border-radius: 10px;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+.btn-2:hover,
+.btn-3:hover{
+    padding: 5px 15px;
+    letter-spacing: 1px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    padding-top: 2%;
+    
+}
+.contact h2{
+    font-size: 1.4rem;
+    margin: 10px 0px;
+    font-family: 'Ubuntu',sans-serif;
+    color: white;
+}
+.main-contact{
+    width: 400px;
+}
+.contact-name{
+    height: 35px;
+    margin: 10px;
+    
+}
+.contact-name input{
+    height: 100%;
+}
+.contact-email{
+    height: 35px;
+    margin: 10px;
+}
+.contact-email input{
+    height: 100%;
+}
+.main-contact input{
+    width: 100%;
+}
+.contact-message{
+    height: 100px;
+    margin: 10px;
+}
+.contact-message input{
+    height: 100%;
+}
+.btn-3{
+    margin: 10px;
+    position: absolute;
+    padding: 10px 20px;
+    background: rgb(83, 142, 253);
+    color: black;
+}
+.btn-3:hover{
+    padding: 12px 25px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 10%;
+    color: rgb(243, 230, 230);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+.icons{
+    font-size: 1.7rem;
+    letter-spacing: 10PX;
+}
+
+
+
+
+/* Responsive */
+
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .home-text{
+        font-size: 1rem;
+        line-height: 30px;
+        margin-left: 15px;
+    }
+    .btn{
+        padding: 5px 8px;
+    }
+    .btn:hover{
+        padding: 7px 10px;
+    }
+    .home-pic{
+        height: 150px;
+        width: 150px;
+    }
+    .home .icon{
+        font-size: 1rem;
+    }
+    .about{
+        margin-top: 25%;
+    }
+    .about h2{
+        font-size: 1.5rem;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-pic{
+        width: 180px;
+        height: 250px;
+        margin: 7% 4%;
+    }
+    .about-text{
+        width: 280px;
+        text-align: center;
+    }
+    .btn-1{
+        margin-left: -50px;
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+    .btn-1:hover{
+        padding: 10px 12px;
+    }
+    .p-skill h2{
+        font-size: 1.5rem;
+        margin-top: 20%;
+    }
+    .my-skill{
+        flex-direction: column;
+    }
+    .professional-skills{
+        width: 200px;
+        text-align: center;
+    }
+    .professional-skills h3{
+        font-size: 1.4rem;
+    }
+    .professional-skills p{
+        font-size: 1rem;
+        
+    }
+    .icon-main{
+        width: 250px;
+    }
+    .icon-main i{
+        font-size: 1rem;
+    }
+    .icon-main .text1{
+        font-size: 1rem;
+    }
+    .percentage{
+        font-size: 1rem;
+        margin-left: 200px;
+    }
+    .skill-pic{
+        width: 280px;
+        height: 220px;
+        margin-left: 50px;
+    }
+    .work-heading h2{
+        font-size: 1.5rem;
+    }
+    .works p{
+        font-size: 0.8rem;
+    }
+    .contact{
+        padding-top: 50px;
+        height: 75%;
+        width: 100%;
+    }
+    .footer{
+        margin-top: 20%;
+        line-height: 40px;
+        flex-direction: column;
+        font-size: 0.8rem;
+       
+    }
+    
+    .icons{
+        font-size: 1.1rem;
+    }
+    .main-contact{
+        width: 250px;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .home-text{
+        font-size: 1.2rem;
+        line-height: 40px;
+        margin-left: 10px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    .home-pic{
+        height: 280px;
+        width: 280px;
+       
+    }
+    .about{
+        margin-top: 20%;
+    }
+    
+    .about-container{
+        flex-direction: column;
+    }
+    .about-text{
+        width: 500px;
+        text-align: center;
+    }
+    
+    .btn-1{
+        margin-left: -65px;
+    }
+    .my-skill{
+        flex-direction: column;
+    }
+    .professional-skills{
+        width: 400px;
+        text-align: center;
+    }
+    .icon-main{
+        width: 440px;
+    }
+    .p-skill{
+        margin-top: 20%;
+    }
+    .skill-pic{
+        width: 400px;
+        height: 250px;
+        margin-left: 50px;
+    }
+    .contact{
+        padding-top: 50px;
+        height: 128%;
+    }
+    .footer{
+        margin-top: 15%;
+        line-height: 40px;
+    }
+    .icons{
+        font-size: 1.2rem;
+    }
+    
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .home-text{
+        font-size: 1.2rem;
+        line-height: 40px;
+        margin-left: 10px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    .home-pic{
+        height: 280px;
+        width: 280px;
+       
+    }
+    .about{
+        margin-top: 20%;
+    }
+    
+    .about-container{
+        flex-direction: column;
+    }
+    .about-text{
+        width: 500px;
+        text-align: center;
+    }
+    
+    .btn-1{
+        margin-left: -65px;
+    }
+    .my-skill{
+        flex-direction: column;
+    }
+    .professional-skills{
+        width: 400px;
+        text-align: center;
+    }
+    .icon-main{
+        width: 440px;
+    }
+    .p-skill{
+        margin-top: 20%;
+    }
+    .skill-pic{
+        width: 400px;
+        height: 250px;
+        margin-left: 50px;
+    }
+    .contact{
+        padding-top: 50px;
+        height: 50%;
+    }
+    .footer{
+        margin-top: 15%;
+        line-height: 40px;
+        
+    }
+    .icons{
+        font-size: 1.2rem;
+    }
+}
+
